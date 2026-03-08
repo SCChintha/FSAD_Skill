@@ -1,0 +1,35 @@
+body {
+  font-family: Arial;
+  background: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px gray;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 10px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+select {
+  padding: 8px;
+}

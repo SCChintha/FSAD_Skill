@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "John Smith",
+    "email": "john@example.com",
+    "phone": "9876543210"
+  },
+  {
+    "id": 2,
+    "name": "Alice Brown",
+    "email": "alice@example.com",
+    "phone": "9123456780"
+  },
+  {
+    "id": 3,
+    "name": "David Miller",
+    "email": "david@example.com",
+    "phone": "9345678123"
+  },
+  {
+    "id": 4,
+    "name": "Emma Wilson",
+    "email": "emma@example.com",
+    "phone": "9456123789"
+  },
+  {
+    "id": 5,
+    "name": "Robert Taylor",
+    "email": "robert@example.com",
+    "phone": "9567812345"
+  }
+]
