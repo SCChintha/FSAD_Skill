@@ -1,0 +1,31 @@
+[33me26eb84[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: reset: moving to origin/main
+[33meea6d79[m HEAD@{1}: rebase (abort): returning to refs/heads/main
+[33me26eb84[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{2}: pull origin main --rebase (start): checkout e26eb84738bddf28c762f3a6294856d782339419
+[33meea6d79[m HEAD@{3}: commit: Other changes
+[33m1dc6c0f[m HEAD@{4}: Branch: renamed refs/heads/main to refs/heads/main
+[33m1dc6c0f[m HEAD@{6}: commit: Skill-11 Completed!!
+[33md49d4b7[m HEAD@{7}: Branch: renamed refs/heads/main to refs/heads/main
+[33md49d4b7[m HEAD@{9}: commit: Insem - Akshaya 32615
+[33m2016dcc[m HEAD@{10}: Branch: renamed refs/heads/main to refs/heads/main
+[33m2016dcc[m HEAD@{12}: Branch: renamed refs/heads/main to refs/heads/main
+[33m2016dcc[m HEAD@{14}: commit: New Proj 10, 11
+[33mf841d0d[m HEAD@{15}: Branch: renamed refs/heads/main to refs/heads/main
+[33mf841d0d[m HEAD@{17}: commit: Minor updates!!
+[33mfde4185[m HEAD@{18}: Branch: renamed refs/heads/main to refs/heads/main
+[33mfde4185[m HEAD@{20}: commit: Skill 9 - Global Exception Handling
+[33m4e8e55e[m HEAD@{21}: Branch: renamed refs/heads/main to refs/heads/main
+[33m4e8e55e[m HEAD@{23}: commit: Skill 6,7,8 Completed with verification
+[33m01bee17[m HEAD@{24}: pull origin main --allow-unrelated-histories: Merge made by the 'ort' strategy.
+[33mefdca6a[m HEAD@{25}: Branch: renamed refs/heads/main to refs/heads/main
+[33mefdca6a[m HEAD@{27}: commit: Added Skill5 Spring project
+[33m006b680[m HEAD@{28}: Branch: renamed refs/heads/main to refs/heads/main
+[33m006b680[m HEAD@{30}: commit: second
+[33mf1beffd[m HEAD@{31}: Branch: renamed refs/heads/main to refs/heads/main
+[33mf1beffd[m HEAD@{33}: commit: fourth_skill
+[33m7c52044[m HEAD@{34}: Branch: renamed refs/heads/main to refs/heads/main
+[33m7c52044[m HEAD@{36}: commit: second
+[33me43e81a[m HEAD@{37}: Branch: renamed refs/heads/main to refs/heads/main
+[33me43e81a[m HEAD@{39}: commit: second
+[33m2fb6ecc[m HEAD@{40}: Branch: renamed refs/heads/main to refs/heads/main
+[33m2fb6ecc[m HEAD@{42}: Branch: renamed refs/heads/master to refs/heads/main
+[33m2fb6ecc[m HEAD@{44}: commit (initial): Initial commit - Hibernate CRUD project
