@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run Spring Boot backend (dev)",
+			"type": "shell",
+			"command": "cd backend; & 'C:\\Users\\saich\\OneDrive\\Desktop\\DEVTrails\\maven\\apache-maven\\apache-maven-3.9.9\\bin\\mvn.cmd' spring-boot:run",
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
