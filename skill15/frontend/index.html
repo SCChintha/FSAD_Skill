@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JWT Auth Demo Frontend</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .container { max-width: 600px; margin: 0 auto; }
+        .box { padding: 15px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; }
+        input, select, button { display: block; width: 100%; margin: 10px 0; padding: 10px; box-sizing: border-box; }
+        pre { background: #f4f4f4; padding: 10px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>JWT Authentication Demo</h1>
+
+    <div class="box">
+        <h3>1. Register User (For Testing)</h3>
+        <input type="text" id="regUser" placeholder="Username">
+        <input type="password" id="regPass" placeholder="Password">
+        <label for="regRole">Role:</label>
+        <select id="regRole">
+            <option value="ADMIN">ADMIN</option>
+            <option value="EMPLOYEE">EMPLOYEE</option>
+        </select>
+        <button onclick="register()">Register</button>
+        <pre id="regRes"></pre>
+    </div>
+
+    <div class="box">
+        <h3>2. Login</h3>
+        <input type="text" id="logUser" placeholder="Username">
+        <input type="password" id="logPass" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <pre id="logRes"></pre>
+        <strong>Current Token:</strong>
+        <pre id="tokenDisplay">None</pre>
+    </div>
+
+    <div class="box">
+        <h3>3. Test Secure Endpoints</h3>
+        <button onclick="testApi('POST', '/admin/add')">Test: POST /admin/add (Admin Only)</button>
+        <button onclick="testApi('DELETE', '/admin/delete')">Test: DELETE /admin/delete (Admin Only)</button>
+        <button onclick="testApi('GET', '/employee/profile')">Test: GET /employee/profile (Employee Only)</button>
+        <pre id="apiRes"></pre>
+    </div>
+</div>
+
+<script>
+    const baseUrl = 'http://localhost:8080';
+    let currentToken = '';
+
+    async function register() {
+        const payload = {
+            username: document.getElementById('regUser').value,
+            password: document.getElementById('regPass').value,
+            role: document.getElementById('regRole').value
+        };
+        try {
+            const res = await fetch(`${baseUrl}/auth/register`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+            document.getElementById('regRes').innerText = await res.text();
+        } catch (err) {
+            document.getElementById('regRes').innerText = "Error: " + err;
+        }
+    }
+
+    async function login() {
+        const payload = {
+            username: document.getElementById('logUser').value,
+            password: document.getElementById('logPass').value
+        };
+        try {
+            const res = await fetch(`${baseUrl}/auth/login`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+            if (res.ok) {
+                currentToken = await res.text();
+                document.getElementById('logRes').innerText = "Login Successful!";
+                document.getElementById('tokenDisplay').innerText = currentToken;
+            } else {
+                document.getElementById('logRes').innerText = "Login Failed: " + res.status;
+                currentToken = '';
+                document.getElementById('tokenDisplay').innerText = 'None';
+            }
+        } catch (err) {
+            document.getElementById('logRes').innerText = "Error: " + err;
+        }
+    }
+
+    async function testApi(method, path) {
+        try {
+            const res = await fetch(`${baseUrl}${path}`, {
+                method: method,
+                headers: { 'Authorization': `Bearer ${currentToken}` }
+            });
+            const text = await res.text();
+            document.getElementById('apiRes').innerText = `Status: ${res.status}\nResponse: ${text}`;
+        } catch (err) {
+            document.getElementById('apiRes').innerText = "Error: " + err;
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+com\example\jwt\controller\EmployeeController.class
+com\example\jwt\controller\AdminController.class
+com\example\jwt\controller\AuthController.class
