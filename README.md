@@ -88,23 +88,24 @@ Welcome to my comprehensive full-stack development repository! This repository d
 
 ## 🎯 Hands-On Skills & Labs Index
 
-| **Skill #** | **Module Title** | **Description** | 
-| **#1** | **Git Version Control** | Repository initialization, branching, merging, and remote syncing. | 
-| **#2** | **Hibernate CRUD Operations** | Entity mapping, session management, and basic database persistence. | 
-| **#3** | **Working with HQL - Sorting, Pagination & Aggregates** | Advanced queries, sorting results, and managing result sets. | 
-| **#4** | **Spring Dependency Injection** | Implementing Constructor and Setter injection in Spring beans. | 
-| **#5** | **Spring Autowiring Demo** | Using `@Autowired` for seamless bean wiring and dependency management. | 
-| **#6** | **Spring MVC Web Request Handling** | Handling web requests, view resolvers, and controller mappings. | 
-| **#7** | **REST API - CRUD Operations** | Building RESTful endpoints using `ResponseEntity` for status handling. | 
-| **#8** | **Spring Boot – JPQL & Query Methods** | Writing custom JPQL queries and leveraging derived query interfaces. | 
-| **#9** | **Global Exception Handling** | Centralized error management using `@ControllerAdvice`. | 
-| **#10** | **React State Management** | Managing component states efficiently using React hooks (`useState`). | 
-| **#11** | **React API Integration** | Consuming REST endpoints with Fetch API, Axios, and local datasets. | 
-| **#12** | **Full-Stack CRUD Application** | End-to-end integration of a React frontend with a Spring Boot backend. | 
-| **#13** | **Deployment of Full-Stack App** | Packaging and deploying Spring Boot and React applications. | 
-| **#14** | **User Authentication & Session Management** | Managing frontend sessions and user states securely in React. | 
-| **#15** | **JWT-Based Authentication & Authorization** | Securing APIs using JSON Web Tokens and role-based permissions. | 
-| **#16** | **API Documentation with Swagger** | Documenting full-stack REST endpoints automatically via Swagger UI. | 
+| Skill # | Module Title | Description |
+| :--- | :--- | :--- |
+| **#1** | Git Version Control | Repository initialization, branching, merging, and remote syncing. |
+| **#2** | Hibernate CRUD Operations | Entity mapping, session management, and basic database persistence. |
+| **#3** | Working with HQL - Sorting, Pagination & Aggregates | Advanced queries, sorting results, and managing result sets. |
+| **#4** | Spring Dependency Injection | Implementing Constructor and Setter injection in Spring beans. |
+| **#5** | Spring Autowiring Demo | Using `@Autowired` for seamless bean wiring and dependency management. |
+| **#6** | Spring MVC Web Request Handling | Handling web requests, view resolvers, and controller mappings. |
+| **#7** | REST API - CRUD Operations | Building RESTful endpoints using `ResponseEntity` for status handling. |
+| **#8** | Spring Boot – JPQL & Query Methods | Writing custom JPQL queries and leveraging derived query interfaces. |
+| **#9** | Global Exception Handling | Centralized error management using `@ControllerAdvice`. |
+| **#10** | React State Management | Managing component states efficiently using React hooks (`useState`). |
+| **#11** | React API Integration | Consuming REST endpoints with Fetch API, Axios, and local datasets. |
+| **#12** | Full-Stack CRUD Application | End-to-end integration of a React frontend with a Spring Boot backend. |
+| **#13** | Deployment of Full-Stack App | Packaging and deploying Spring Boot and React applications. |
+| **#14** | User Authentication & Session Management | Managing frontend sessions and user states securely in React. |
+| **#15** | JWT-Based Authentication & Authorization | Securing APIs using JSON Web Tokens and role-based permissions. |
+| **#16** | API Documentation with Swagger | Documenting full-stack REST endpoints automatically via Swagger UI. |
 
 ## 🚀 Getting Started
 
@@ -113,7 +114,7 @@ To run any module locally:
 1. **Clone the repository:**
 
    ```
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/SCChintha/FSAD_Skill.git
    
    ```
 
